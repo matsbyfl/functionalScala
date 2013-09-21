@@ -1,5 +1,5 @@
 package recfun
-import common._
+
 import annotation.tailrec
 
 object Main {
@@ -17,28 +17,25 @@ object Main {
    */
   //@tailrec
   def pascal(c: Int, r: Int): Int = {
-    if ( c == 0 || c == r ) 1 else pascal( c -1, r -1 ) + pascal(c, r -1 )
+    if (c == 0 || c == r) 1 else pascal(c - 1, r - 1) + pascal(c, r - 1)
   }
 
   /**
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    def loop(chars: List[Char], count: Int): Int ={
+    def loop(chars: List[Char], count: Int): Int = {
       if (chars.isEmpty || count < 0) {
         return count
       }
-      if ( chars.head == '(') {
-          loop( chars.tail, (count + 1))
-      }
-      else if( chars.head == ')') {
-        loop( chars.tail, count -1 )
-      }
-      else {
-        loop( chars.tail, count)
-      }
+      if (chars.head == '(')
+        loop(chars.tail, (count + 1))
+      else if (chars.head == ')')
+        loop(chars.tail, count - 1)
+      else
+        loop(chars.tail, count)
     }
-    if (loop( chars, 0) != 0 ) false else true
+    if (loop(chars, 0) != 0) false else true
   }
 
   /**
