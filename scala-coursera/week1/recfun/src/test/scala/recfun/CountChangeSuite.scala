@@ -13,8 +13,8 @@ class CountChangeSuite extends FunSuite {
   }
 
   test("countChange: sorted CHF") {
-    assert(countChange(300,List(5,10,20,50,100,200,500)) === 1022)
-  }
+  assert(countChange(300,List(5,10,20,50,100,200,500)) === 1022)
+}
 
   test("countChange: no pennies") {
     assert(countChange(301,List(5,10,20,50,100,200,500)) === 0)
