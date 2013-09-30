@@ -32,7 +32,7 @@ object Main {
       else
         loop(chars.tail, count)
     }
-    if (loop(chars, 0) != 0) false else true
+    loop(chars, 0) == 0
   }
 
   /**
