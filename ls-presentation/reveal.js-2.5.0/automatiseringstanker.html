@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Siste nytt fra MOD</title>
+
+		<meta name="description" content="Målbilder automatisering">
+		<meta name="author" content="Mats Byfuglien">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Automatisering i NAV</h1>
+					<h3>Målbilder og visjoner</h3>
+					<p>
+						<small><a href="#">Mats Byfuglien</a> </small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Post-it sesjon</h2>
+					<h4>Kortsiktige mål</h4>
+						<ul>
+							<li>Hvilke rutineoppgaver utfører du ofte?</li>
+							<li>Hva bruker du mye tid på?</li>
+						</ul>
+					<h4>Visjoner</h4>
+						<ul>
+							<li>Våte drømmer...</li>
+						</ul>
+
+				</section>
+
+				<section>
+					<ul style="font-size: 32px">
+						<li>http://12factor.net/</li>
+						<li>Continious deployment</li>
+						<li>Continious delivery</li>
+						<li>Test automatisering</li>
+						<li>Stubbing / Mocking</li>
+						<li>Kontroll på testdata</li>
+						<li>Applikasjoner bygges på spekfil, JEE6 container, JDK8 osv.</li> 
+						<li>Trenger ikke kjenne til underliggende appserver plattform</li>
+						<li>Samarbeid med andre aktører?</li> 
+						<li>http://government.github.com/</li>
+					</ul>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
